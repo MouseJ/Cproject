@@ -46,7 +46,8 @@ nav ul li a.active {
     background: linear-gradient(135deg, #DC8CF7, #AE92FC);
     border-radius: 4px;
     color: transparent;
-    background-clip: text;
+    background-clip: text; }
+    position: relative; /* Добавляем относительное позиционирование */
 }
 
 nav ul li a.active::after {
