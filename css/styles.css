@@ -1,21 +1,67 @@
-/* Остальные стили остаются такими же */
-.logout a {
-    padding: 10px 20px;
-    border-radius: 8px;
-    background-color: #ffffff;
-    color: #000000;
-    border: none;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    text-decoration: none;
-    display: inline-block;
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('fonts/Montserrat-Bold.woff2') format('woff2'),
+         url('fonts/Montserrat-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
 }
 
-.logout a:hover {
-    background: linear-gradient(135deg, #DC8CF7, #AE92FC);
+body {
+    margin: 0;
+    font-family: 'Montserrat-Bold', sans-serif;
+    background-color: #000000;
     color: #ffffff;
 }
 
-.personal a {
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #000000;
+    border-bottom: 2px solid #ffffff;
+}
+
+.logo img {
+    height: 30px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
+    position: relative;
+}
+
+nav ul li a.active {
+    background: linear-gradient(135deg, #DC8CF7, #AE92FC);
+    border-radius: 4px;
+    color: transparent;
+    background-clip: text;
+    position: relative;
+}
+
+nav ul li a.active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -2px;
+    height: 2px;
+    background: linear-gradient(135deg, #DC8CF7, #AE92FC);
+}
+
+.logout a, .personal a {
     padding: 10px 20px;
     border-radius: 8px;
     background-color: #ffffff;
@@ -26,7 +72,7 @@
     display: inline-block;
 }
 
-.personal a:hover {
+.logout a:hover, .personal a:hover {
     background: linear-gradient(135deg, #DC8CF7, #AE92FC);
     color: #ffffff;
 }
