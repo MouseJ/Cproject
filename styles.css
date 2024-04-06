@@ -35,6 +35,8 @@ body {
 .admin-header {
     display: flex; /* Делаем flex-контейнером */
     align-items: center; /* Выравниваем элементы по вертикали */
+    background-color: #191919; /* Цвет фона для хедера */
+
 }
 
 .admin-logo img {
