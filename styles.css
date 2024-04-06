@@ -26,8 +26,8 @@ body {
 }
 
 .admin-logo img {
-    width: 150px; /* Размер логотипа */
-    height: auto;
+    width: 50px; /* Размер логотипа */
+    height: auto; /* Автоскейл по диагонали */
 }
 
 .admin-button {
@@ -124,7 +124,4 @@ body {
     text-decoration: underline;
 }
 
-.admin-logo img {
-    width: 50px; /* Задаем ширину изображения */
-    height: auto; /* Сохраняем пропорции изображения */
-}
+
