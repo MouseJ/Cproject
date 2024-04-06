@@ -25,5 +25,51 @@
         </div>
     </header>
     <!-- Остальной контент админ панели здесь -->
+ <main>
+        <div class="filter">
+            <label for="role">Роль:</label>
+            <select id="role">
+                <option value="">Все</option>
+                <option value="user">Пользователь</option>
+                <option value="admin">Администратор</option>
+                <option value="moderator">Модератор</option>
+                <option value="youtuber">Ютубер</option>
+            </select>
+
+            <label for="subscription">Подписка:</label>
+            <select id="subscription">
+                <option value="">Все</option>
+                <option value="subscribed">Подписан</option>
+                <option value="unsubscribed">Не подписан</option>
+            </select>
+
+            <label for="sort">Сортировка по UID:</label>
+            <select id="sort">
+                <option value="asc">По возрастанию</option>
+                <option value="desc">По убыванию</option>
+            </select>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>UID</th>
+                    <th>Username</th>
+                    <th>Mail</th>
+                    <th>Profile</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Здесь будут данные из базы данных -->
+                <tr>
+                    <td>1</td>
+                    <td>User1</td>
+                    <td>user1@example.com</td>
+                    <td><a href="#">Перейти</a></td>
+                </tr>
+                <!-- Здесь остальные строки таблицы -->
+            </tbody>
+        </table>
+    </main>
 </body>
 </html>
