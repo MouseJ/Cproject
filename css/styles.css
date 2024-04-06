@@ -82,7 +82,7 @@ nav ul li a.active::after {
 .container {
     display: flex;
     width: 100%;
-    margin-top: 20px; /* Добавлено */
+    margin-top: 20px;
 }
 
 .sidebar {
@@ -95,9 +95,9 @@ nav ul li a.active::after {
 
 .filter {
     color: #ffffff;
-    background-color: #212121; /* Добавлено */
-    padding: 20px; /* Добавлено */
-    border-radius: 16px; /* Добавлено */
+    background-color: #212121;
+    padding: 20px;
+    border-radius: 16px;
 }
 
 .filter h3 {
@@ -112,15 +112,15 @@ nav ul li a.active::after {
 .content {
     flex-grow: 1;
     padding: 20px;
-    background-color: #212121; /* Добавлено */
-    border-radius: 16px; /* Добавлено */
+    background-color: #212121;
+    border-radius: 16px;
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
-    background-color: #212121; /* Добавлено */
-    border-radius: 16px; /* Добавлено */
+    background-color: #212121;
+    border-radius: 16px;
 }
 
 table th, table td {
@@ -162,15 +162,15 @@ input[type="text"] {
     margin-bottom: 20px;
     border-radius: 8px;
     border: 1px solid #ffffff;
-    background-color: #ffffff; /* Изменено на белый фон */
-    color: #000000; /* Изменено на черный текст */
+    background-color: #757575; /* Изменено на серый фон */
+    color: #ffffff;
 }
 
 .search-button {
     padding: 10px 20px;
     border-radius: 8px;
-    background-color: #ffffff;
-    color: #000000;
+    background-color: #757575; /* Изменено на серый фон */
+    color: #ffffff;
     border: none;
     text-decoration: none;
     transition: background-color 0.3s ease, color 0.3s ease;
