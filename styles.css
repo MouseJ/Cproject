@@ -1,142 +1,49 @@
-/* Общие стили */
 body {
     margin: 0;
-    padding: 0;
-     font-family: 'Montserrat', sans-serif;
-    background-color: #000; /* Цвет фона страницы */
-    color: #fff; /* Цвет текста на странице */
+    font-family: 'Montserrat', sans-serif;
+    background-color: #000000;
+    color: #ffffff;
 }
 
-.container {
-    width: 90%; /* Ширина контейнера на 90% от ширины окна браузера */
-    max-width: 1200px; /* Максимальная ширина контейнера */
-    margin: 0 auto; /* Центрирование контейнера на странице */
-    padding: 0 15px; /* Внутренние отступы контейнера для мобильных устройств */
-    box-sizing: border-box; /* Учитываем padding внутри ширины контейнера */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #000000;
+    border-bottom: 2px solid #ffffff;
 }
 
-/* Медиазапросы для адаптивности */
-@media screen and (max-width: 768px) {
-    .container {
-        width: 90%; /* Ширина контейнера на 90% от ширины окна браузера для устройств с шириной до 768px */
-        padding: 0 10px; /* Уменьшаем внутренние отступы контейнера для устройств с шириной до 768px */
-    }
+.logo img {
+    height: 40px;
 }
 
-@media screen and (max-width: 480px) {
-    .container {
-        width: 90%; /* Ширина контейнера на 90% от ширины окна браузера для устройств с шириной до 480px */
-        padding: 0 5px; /* Уменьшаем внутренние отступы контейнера для устройств с шириной до 480px */
-    }
-}
-
-/* Хедер (Header) */
-.admin-header {
-    display: flex; /* Используем flexbox */
-    align-items: center; /* Выравниваем элементы по вертикали */
-    background-color: #191919; /* Цвет фона хедера */
-}
-
-.admin-header-left {
-    flex-grow: 1; /* Это разделит ваш хедер на две части, чтобы правильно разместить элементы */
-}
-
-.admin-header-right {
-    margin-left: auto; /* Это сдвинет элементы вправо */
-}
-
-.admin-logo img {
-    max-height: 50px; /* Максимальная высота логотипа */
-}
-
-.admin-tabs {
-    margin-left: 20px; /* Отступ для вкладок */
+nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-.admin-tabs li {
+nav ul li {
     display: inline;
 }
 
-.admin-tabs a {
-    color: #fff; /* Цвет текста вкладок */
+nav ul li a {
+    color: #ffffff;
     text-decoration: none;
     padding: 10px 20px;
 }
 
-.admin-tabs a.active {
-    background: linear-gradient(45deg, #dc8cf7, #ae92fc); /* градиентный фон для активной вкладки */
-    background-clip: text; /* Применяем градиент к тексту */
-    -webkit-background-clip: text; /* Для браузеров на основе Webkit */
-    color: transparent; /* Делаем текст прозрачным */
-    -webkit-text-fill-color: transparent; /* Для браузеров на основе Webkit */
-    text-decoration: underline; /* Подчеркиваем текст */
+nav ul li a.active {
+    background: linear-gradient(135deg, #DC8CF7, #AE92FC);
+    border-radius: 4px;
 }
 
-.admin-tabs a:hover {
-    color: #fff; /* Цвет текста вкладок при наведении */
-}
-
-.admin-button {
-    color: #fff; /* Цвет текста кнопки Выйти */
-    padding: 8px 16px;
+.logout a {
+    color: #ffffff;
     text-decoration: none;
-    border-radius: 5px;
-}
-
-.admin-button:hover {
-    background: #ae92fc; /* градиентный фон при наведении */
-}
-
-/* Стили для основного содержимого (пользовательской таблицы) */
-.user-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-.user-table th, .user-table td {
-    border: 1px solid #ccc;
-    padding: 8px;
-}
-
-.user-table th {
-    background-color: #444; /* Цвет фона заголовков таблицы */
-    color: #fff; /* Цвет текста заголовков таблицы */
-}
-
-.user-table tr:nth-child(even) {
-    background-color: #f2f2f2; /* Цвет фона четных строк таблицы */
-}
-
-.user-table tr:hover {
-    background-color: #ddd; /* Цвет фона строки при наведении */
-}
-
-/* Стили для футтера */
-.admin-footer {
-    background-color: #333; /* Цвет фона футтера */
-    color: #fff; /* Цвет текста футтера */
-    padding: 20px 0;
-    text-align: center;
-}
-
-.social-links {
-    list-style-type: none;
-    padding: 0;
-}
-
-.social-links li {
-    display: inline;
-    margin: 0 10px;
-}
-
-.social-links a {
-    color: #fff; /* Цвет ссылок в футтере */
-    text-decoration: none;
-}
-
-.social-links a:hover {
-    text-decoration: underline;
+    padding: 10px 20px;
+    border-radius: 4px;
+    background-color: #ffffff;
+    color: #000000;
 }
