@@ -59,20 +59,21 @@ body {
 }
 
 .admin-tabs a {
-    display: inline-block;
     color: #414141; /* Цвет текста вкладок */
     text-decoration: none;
     padding: 10px 20px;
 }
 
 .admin-tabs a.active {
-    background: #dc8cf7; /* градиентный фон для активной вкладки */
     background: linear-gradient(45deg, #dc8cf7, #ae92fc); /* градиентный фон для активной вкладки */
-    color: #fff; /* Цвет текста для активной вкладки */
+    background-clip: text; /* Применяем градиент к тексту */
+    -webkit-background-clip: text; /* Для браузеров на основе Webkit */
+    color: transparent; /* Делаем текст прозрачным */
+    -webkit-text-fill-color: transparent; /* Для браузеров на основе Webkit */
+    text-decoration: underline; /* Подчеркиваем текст */
 }
 
 .admin-tabs a:hover {
-    background-color: #191919; /* Цвет фона вкладок при наведении */
     color: #fff; /* Цвет текста вкладок при наведении */
 }
 
@@ -86,6 +87,7 @@ body {
 .admin-button:hover {
     background: #ae92fc; /* градиентный фон при наведении */
 }
+
 
 
 
