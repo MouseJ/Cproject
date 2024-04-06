@@ -168,4 +168,5 @@ input[type="text"] {
     margin-right: 12px; /* Добавляем отступ справа */
     background-color: #212121; /* Задний фон как у фильтров */
     color: #ffffff; /* Цвет текста как у фильтров */
+    margin-top: 20px; /* Отступ сверху */
 }
