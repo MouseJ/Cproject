@@ -45,7 +45,7 @@ body {
 
 /* Стили для вкладок */
 .admin-tabs {
-    background-color: #666; /* Цвет фона вкладок */
+    background-color: #000; /* Цвет фона вкладок */
 }
 
 .admin-tabs ul {
@@ -60,18 +60,22 @@ body {
 
 .admin-tabs a {
     display: inline-block;
-    color: #fff; /* Цвет текста вкладок */
+    color: #414141; /* Цвет текста вкладок */
     text-decoration: none;
     padding: 10px 20px;
 }
 
 .admin-tabs a.active {
-    background-color: #ff6600; /* Цвет активной вкладки */
+    background: #dc8cf7; /* градиентный фон для активной вкладки */
+    background: linear-gradient(45deg, #dc8cf7, #ae92fc); /* градиентный фон для активной вкладки */
+    color: #fff; /* Цвет текста для активной вкладки */
 }
 
 .admin-tabs a:hover {
-    background-color: #444; /* Цвет вкладки при наведении */
+    background-color: #191919; /* Цвет фона вкладок при наведении */
+    color: #fff; /* Цвет текста вкладок при наведении */
 }
+
 
 /* Стили для основного содержимого (пользовательской таблицы) */
 .user-table {
