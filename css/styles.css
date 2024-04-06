@@ -61,17 +61,20 @@ nav ul li a.active::after {
 }
 
 .logout a {
-    padding: 10px 30px;
-    border-radius: 8px; /* Устанавливаем радиус скругления углов */
-    background-color: #ffffff; /* Устанавливаем белый фон */
-    color: #000000; /* Устанавливаем черный цвет текста */
-    border: none; /* Удаляем границу */
-    transition: background-color 0.3s ease, color 0.3s ease; /* Добавляем плавный переход */
+    padding: 10px 20px; /* Фиксированный внутренний отступ */
+    border-radius: 8px;
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-decoration: none;
+    display: inline-block; /* Установка как блочный элемент для автоматического изменения ширины */
 }
 
 .logout a:hover {
-    background: linear-gradient(135deg, #DC8CF7, #AE92FC); /* Изменяем фон при наведении на градиентный */
-    color: #ffffff; /* Изменяем цвет текста на белый при наведении */
+    background: linear-gradient(135deg, #DC8CF7, #AE92FC);
+    color: #ffffff;
 }
+
 
 
