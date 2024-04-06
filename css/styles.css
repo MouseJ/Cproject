@@ -83,6 +83,9 @@ nav ul li a.active::after {
 
 .container {
     display: flex;
+    flex-direction: row; /* Горизонтальное расположение */
+    align-items: flex-start; /* Выравнивание по верхнему краю */
+    justify-content: space-between; /* Равномерное распределение по горизонтали */
     width: 100%;
 }
 
@@ -111,6 +114,9 @@ nav ul li a.active::after {
     flex-grow: 1;
     padding: 20px;
     margin-top: 20px;
+    display: flex; /* Добавлено */
+    flex-direction: column; /* Добавлено */
+    align-items: flex-start; /* Добавлено */
 }
 
 table {
@@ -207,9 +213,4 @@ table a:hover {
 
 .search_text:focus + .search_icon {
     color: #4451FE;
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
 }
