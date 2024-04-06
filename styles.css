@@ -123,3 +123,8 @@ body {
 .social-links a:hover {
     text-decoration: underline;
 }
+
+.admin-logo img {
+    width: 150px; /* Задаем ширину изображения */
+    height: auto; /* Сохраняем пропорции изображения */
+}
