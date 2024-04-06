@@ -12,8 +12,6 @@ body {
     background-color: #000000;
     color: #ffffff;
     display: flex;
-    flex-direction: column;
-    min-height: 100vh;
 }
 
 header {
@@ -37,7 +35,7 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin-right: 20px;
+    margin-right: 20px; /* Добавлено */
 }
 
 nav ul li a {
@@ -90,7 +88,6 @@ nav ul li a.active::after {
     background-color: #212121;
     border-radius: 16px;
     padding: 20px;
-    margin-top: 20px;
 }
 
 .filter {
@@ -109,25 +106,16 @@ nav ul li a.active::after {
 .content {
     flex-grow: 1;
     padding: 20px;
-    background-color: #212121;
-    border-radius: 16px;
-    margin-top: 20px;
-    margin-left: 20px;
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 12px;
-    margin-top: 20px;
-    overflow: hidden;
 }
 
 table th, table td {
     border: 1px solid #ffffff;
-    padding: 12px;
-    text-align: center;
+    padding: 8px;
 }
 
 table th {
@@ -144,14 +132,13 @@ table tbody tr:hover {
 }
 
 table a {
-    padding: 8px 12px;
+    padding: 8px 16px;
     border-radius: 8px;
     background-color: #ffffff;
     color: #000000;
     border: none;
     text-decoration: none;
     transition: background-color 0.3s ease, color 0.3s ease;
-    display: inline-block;
 }
 
 table a:hover {
@@ -160,28 +147,27 @@ table a:hover {
 }
 
 input[type="text"] {
-    width: calc(100% - 24px);
+    width: 100%;
     padding: 8px;
     margin-bottom: 20px;
     border-radius: 8px;
-    border: none;
-    margin-right: 12px;
-    background-color: #212121;
-    color: #ffffff;
-    margin-top: 20px;
+    border: 1px solid #ffffff; /* Добавлено */
+    background-color: #212121; /* Добавлено */
+    color: #ffffff; /* Добавлено */
 }
 
 .search-button {
-    padding: 10px 20px;
-    border-radius: 8px;
-    background-color: #ffffff;
-    color: #000000;
-    border: none;
-    text-decoration: none;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    padding: 10px 20px; /* Изменено */
+    border-radius: 8px; /* Изменено */
+    background-color: #ffffff; /* Изменено */
+    color: #000000; /* Изменено */
+    border: none; /* Изменено */
+    text-decoration: none; /* Изменено */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Изменено */
+    margin-left: 10px; /* Добавлено */
 }
 
 .search-button:hover {
-    background: linear-gradient(135deg, #DC8CF7, #AE92FC);
-    color: #ffffff;
+    background: linear-gradient(135deg, #DC8CF7, #AE92FC); /* Изменено */
+    color: #ffffff; /* Изменено */
 }
