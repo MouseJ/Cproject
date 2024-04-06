@@ -159,47 +159,28 @@ table a:hover {
 }
 
 .search_box {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end; /* Выравниваем элементы по правому краю */
     margin-bottom: 20px;
 }
 
 .search {
     display: flex;
     align-items: center;
-    width: 100%;
     background-color: #f5e6ed;
     border-radius: 8px;
     padding: 8px;
-}
-
-.select_area, .text_and-icon {
-    display: flex;
-    align-items: center;
-}
-
-.map_icon {
-    color: #4451FE;
-}
-
-.text {
-    color: #4451FE;
-    padding-left: 10px;
-}
-
-.line {
-    margin: 0 10px;
-    width: 1px;
-    height: 20px;
-    background-color: #4451FE;
+    width: 100%; /* Занимает всю доступную ширину */
 }
 
 .search_text {
-    width: calc(100% - 20px); /* Устанавливаем ширину поиска равной ширине родительского контейнера минус внутренние отступы */
+    flex-grow: 1; /* Растягиваем поле ввода на всю доступную ширину */
     padding: 8px;
     border-radius: 8px;
     border: none;
     background-color: transparent;
     color: #000000;
-    box-sizing: border-box; /* Учитываем padding внутри размера элемента */
 }
 
 .search_icon {
@@ -213,4 +194,9 @@ table a:hover {
 
 .search_text:focus + .search_icon {
     color: #4451FE;
+}
+
+.table-container {
+    width: 100%;
+    overflow-x: auto; /* Добавлено для горизонтальной прокрутки, если таблица слишком широкая */
 }
