@@ -194,12 +194,13 @@ table a:hover {
 }
 
 .search_text {
-    flex-grow: 1;
+    width: 100%; /* Занимает 100% ширины родительского элемента */
     padding: 8px;
     border-radius: 8px;
     border: none;
     background-color: transparent;
     color: #000000;
+    box-sizing: border-box; /* Учитываем padding внутри размера элемента */
 }
 
 .search_icon {
