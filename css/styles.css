@@ -108,22 +108,23 @@ nav ul li a.active::after {
 .content {
     flex-grow: 1;
     padding: 20px;
-    display: flex; /* Добавлено */
-    flex-direction: column; /* Добавлено */
+    display: flex;
+    flex-direction: column;
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* добавлен эффект тени */
-    border-radius: 12px; /* добавлено закругление краёв */
-    margin-top: 20px; /* Добавлено */
-    overflow: hidden; /* Добавлено */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    margin-top: 20px;
+    overflow: hidden;
 }
 
 table th, table td {
     border: 1px solid #ffffff;
     padding: 12px;
+    text-align: center; /* выравнивание по центру */
 }
 
 table th {
@@ -140,13 +141,14 @@ table tbody tr:hover {
 }
 
 table a {
-    padding: 8px 16px;
+    padding: 8px 12px;
     border-radius: 8px;
     background-color: #ffffff;
     color: #000000;
     border: none;
     text-decoration: none;
     transition: background-color 0.3s ease, color 0.3s ease;
+    display: inline-block;
 }
 
 table a:hover {
