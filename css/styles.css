@@ -160,13 +160,28 @@ table a:hover {
 }
 
 input[type="text"] {
-    width: calc(100% - 24px); /* Выравниваем ширину поискового поля */
+    width: calc(100% - 24px);
     padding: 8px;
     margin-bottom: 20px;
     border-radius: 8px;
     border: none;
-    margin-right: 12px; /* Добавляем отступ справа */
-    background-color: #212121; /* Задний фон как у фильтров */
-    color: #ffffff; /* Цвет текста как у фильтров */
-    margin-top: 20px; /* Отступ сверху */
+    margin-right: 12px;
+    background-color: #212121;
+    color: #ffffff;
+    margin-top: 20px;
+}
+
+.search-button {
+    padding: 10px 20px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.search-button:hover {
+    background: linear-gradient(135deg, #DC8CF7, #AE92FC);
+    color: #ffffff;
 }
