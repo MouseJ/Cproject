@@ -90,6 +90,7 @@ nav ul li a.active::after {
     background-color: #212121;
     border-radius: 16px;
     padding: 20px;
+    margin-top: 20px; /* Добавляем отступ над фильтрами */
 }
 
 .filter {
@@ -108,10 +109,10 @@ nav ul li a.active::after {
 .content {
     flex-grow: 1;
     padding: 20px;
-    background-color: #212121; /* Задний фон как у фильтров */
-    border-radius: 16px; /* Округление углов, чтобы соответствовать стилю */
+    background-color: #212121;
+    border-radius: 16px;
     margin-top: 20px; /* Добавляем отступ от шапки сайта */
-    margin-left: 20px; /* Добавлено, чтобы создать отступ между фильтрами и таблицей */
+    margin-left: 20px;
 }
 
 table {
@@ -126,7 +127,7 @@ table {
 table th, table td {
     border: 1px solid #ffffff;
     padding: 12px;
-    text-align: center; /* выравнивание по центру */
+    text-align: center;
 }
 
 table th {
