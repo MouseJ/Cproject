@@ -30,7 +30,6 @@ body {
     }
 }
 
-
 /* Хедер (Header) */
 .admin-header {
     display: flex; /* Используем flexbox */
@@ -52,9 +51,6 @@ body {
 
 .admin-tabs {
     margin-left: 20px; /* Отступ для вкладок */
-}
-
-.admin-tabs ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -65,54 +61,7 @@ body {
 }
 
 .admin-tabs a {
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 20px;
-}
-
-.admin-tabs a.active {
-    background: linear-gradient(45deg, #dc8cf7, #ae92fc);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    -webkit-text-fill-color: transparent;
-    text-decoration: underline;
-}
-
-.admin-tabs a:hover {
-    color: #fff;
-}
-
-.admin-button {
-    color: #fff;
-    padding: 8px 16px;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.admin-button:hover {
-    background: #ae92fc;
-}
-
-
-
-/* Стили для вкладок */
-.admin-tabs {
-    margin-left: 20px; /* Добавляем небольшой отступ между логотипом и вкладками */
-}
-
-.admin-tabs ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.admin-tabs li {
-    display: inline;
-}
-
-.admin-tabs a {
-    color: #414141; /* Цвет текста вкладок */
+    color: #fff; /* Цвет текста вкладок */
     text-decoration: none;
     padding: 10px 20px;
 }
@@ -140,9 +89,6 @@ body {
 .admin-button:hover {
     background: #ae92fc; /* градиентный фон при наведении */
 }
-
-
-
 
 /* Стили для основного содержимого (пользовательской таблицы) */
 .user-table {
@@ -194,5 +140,3 @@ body {
 .social-links a:hover {
     text-decoration: underline;
 }
-
-
