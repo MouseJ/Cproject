@@ -12,6 +12,7 @@ body {
     background-color: #000000;
     color: #ffffff;
     display: flex;
+    flex-direction: column; /* Изменено */
 }
 
 header {
@@ -35,7 +36,7 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin-right: 20px; /* Добавлено */
+    margin-right: 20px;
 }
 
 nav ul li a {
@@ -88,6 +89,7 @@ nav ul li a.active::after {
     background-color: #212121;
     border-radius: 16px;
     padding: 20px;
+    margin-right: 20px; /* Добавлено */
 }
 
 .filter {
@@ -147,27 +149,27 @@ table a:hover {
 }
 
 input[type="text"] {
-    width: 100%;
+    width: calc(100% - 20px); /* Изменено */
     padding: 8px;
     margin-bottom: 20px;
     border-radius: 8px;
-    border: 1px solid #ffffff; /* Добавлено */
-    background-color: #212121; /* Добавлено */
-    color: #ffffff; /* Добавлено */
+    border: 1px solid #ffffff;
+    background-color: #212121;
+    color: #ffffff;
 }
 
 .search-button {
-    padding: 10px 20px; /* Изменено */
-    border-radius: 8px; /* Изменено */
-    background-color: #ffffff; /* Изменено */
-    color: #000000; /* Изменено */
-    border: none; /* Изменено */
-    text-decoration: none; /* Изменено */
-    transition: background-color 0.3s ease, color 0.3s ease; /* Изменено */
-    margin-left: 10px; /* Добавлено */
+    padding: 10px 20px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-left: 10px;
 }
 
 .search-button:hover {
-    background: linear-gradient(135deg, #DC8CF7, #AE92FC); /* Изменено */
-    color: #ffffff; /* Изменено */
+    background: linear-gradient(135deg, #DC8CF7, #AE92FC);
+    color: #ffffff;
 }
