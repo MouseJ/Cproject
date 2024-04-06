@@ -156,28 +156,36 @@ table a:hover {
     color: #ffffff;
 }
 
-input[type="text"] {
-    width: calc(100% - 20px);
+.input-container {
+    display: flex;
+    align-items: center;
+    background-color: #757575;
+    border-radius: 8px;
     padding: 8px;
     margin-bottom: 20px;
+}
+
+input[type="text"] {
+    flex-grow: 1;
+    padding: 8px;
     border-radius: 8px;
-    border: 1px solid #ffffff;
-    background-color: #757575; /* Изменено на серый фон */
+    border: none;
+    background-color: #757575;
     color: #ffffff;
 }
 
 .search-button {
-    padding: 10px 20px;
+    padding: 8px 16px;
     border-radius: 8px;
-    background-color: #757575; /* Изменено на серый фон */
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #000000;
     border: none;
     text-decoration: none;
     transition: background-color 0.3s ease, color 0.3s ease;
+    margin-left: 10px;
 }
 
 .search-button:hover {
     background: linear-gradient(135deg, #DC8CF7, #AE92FC);
     color: #ffffff;
-    margin-left: 10px;
 }
