@@ -11,6 +11,7 @@ body {
     font-family: 'Montserrat-Bold', sans-serif;
     background-color: #000000;
     color: #ffffff;
+    display: flex;
 }
 
 header {
@@ -75,6 +76,11 @@ nav ul li a.active::after {
 .personal a:hover {
     background: linear-gradient(135deg, #DC8CF7, #AE92FC);
     color: #ffffff;
+}
+
+.container {
+    display: flex;
+    width: 100%;
 }
 
 .sidebar {
