@@ -1,6 +1,7 @@
 @font-face {
     font-family: 'Montserrat-Bold';
-    src: url('fonts/Montserrat-Bold.ttf') format('truetype');
+    src: url('fonts/Montserrat-Bold.woff2') format('woff2'), /* Добавляем формат WOFF2 */
+         url('fonts/Montserrat-Bold.woff') format('woff'); /* Добавляем формат WOFF */
     font-weight: bold;
     font-style: normal;
 }
