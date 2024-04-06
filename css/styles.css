@@ -12,7 +12,7 @@ body {
     background-color: #000000;
     color: #ffffff;
     display: flex;
-    flex-direction: column; /* Добавлено для правильного выравнивания */
+    flex-direction: column;
 }
 
 header {
@@ -22,8 +22,8 @@ header {
     padding: 10px 20px;
     background-color: #000000;
     border-bottom: 1px solid #ffffff;
-    width: 100%; /* Добавлено */
-    box-sizing: border-box; /* Добавлено */
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .logo img {
@@ -91,7 +91,7 @@ nav ul li a.active::after {
     background-color: #212121;
     border-radius: 16px;
     padding: 20px;
-    margin-top: 20px; /* Добавлено */
+    margin-top: 20px;
 }
 
 .filter {
@@ -110,14 +110,14 @@ nav ul li a.active::after {
 .content {
     flex-grow: 1;
     padding: 20px;
-    margin-top: 20px; /* Добавлено */
+    margin-top: 20px;
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
-    background-color: #212121; /* Добавлено */
-    border-radius: 16px; /* Добавлено */
+    background-color: #212121;
+    border-radius: 16px;
 }
 
 table th, table td {
@@ -153,34 +153,63 @@ table a:hover {
     color: #ffffff;
 }
 
-.input-container {
-    display: flex;
-    align-items: center;
-    background-color: #f5e6ed;
-    border-radius: 8px;
-    padding: 8px;
+.search_box {
     margin-bottom: 20px;
 }
 
-.input-container input[type="text"] {
+.search {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: #f5e6ed;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+.select_area, .text_and-icon {
+    display: flex;
+    align-items: center;
+}
+
+.map_icon {
+    color: #4451FE;
+}
+
+.text {
+    color: #4451FE;
+    padding-left: 10px;
+}
+
+.line {
+    margin: 0 10px;
+    width: 1px;
+    height: 20px;
+    background-color: #4451FE;
+}
+
+.search_text {
     flex-grow: 1;
     padding: 8px;
     border-radius: 8px;
     border: none;
-    background-color: #f5e6ed;
+    background-color: transparent;
     color: #000000;
 }
 
-.input-container button {
-    background-color: #ffffff;
-    border: none;
-    padding: 8px 16px;
-    border-radius: 8px;
-    margin-left: 8px;
-    cursor: pointer;
+.search_icon {
+    color: #5E6573;
+    margin-left: 10px;
 }
 
-.input-container button:hover {
-    background: linear-gradient(135deg, #DC8CF7, #AE92FC);
-    color: #ffffff;
+.search_text:focus {
+    outline: none;
+}
+
+.search_text:focus + .search_icon {
+    color: #4451FE;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
 }
