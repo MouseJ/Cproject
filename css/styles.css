@@ -12,7 +12,7 @@ body {
     background-color: #000000;
     color: #ffffff;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Добавлено для правильного выравнивания */
 }
 
 header {
@@ -22,6 +22,8 @@ header {
     padding: 10px 20px;
     background-color: #000000;
     border-bottom: 1px solid #ffffff;
+    width: 100%; /* Добавлено */
+    box-sizing: border-box; /* Добавлено */
 }
 
 .logo img {
@@ -82,7 +84,6 @@ nav ul li a.active::after {
 .container {
     display: flex;
     width: 100%;
-    margin-top: 20px;
 }
 
 .sidebar {
@@ -90,14 +91,11 @@ nav ul li a.active::after {
     background-color: #212121;
     border-radius: 16px;
     padding: 20px;
-    margin-right: 20px;
+    margin-top: 20px; /* Добавлено */
 }
 
 .filter {
     color: #ffffff;
-    background-color: #212121;
-    padding: 20px;
-    border-radius: 16px;
 }
 
 .filter h3 {
@@ -112,15 +110,14 @@ nav ul li a.active::after {
 .content {
     flex-grow: 1;
     padding: 20px;
-    background-color: #212121;
-    border-radius: 16px;
+    margin-top: 20px; /* Добавлено */
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
-    background-color: #212121;
-    border-radius: 16px;
+    background-color: #212121; /* Добавлено */
+    border-radius: 16px; /* Добавлено */
 }
 
 table th, table td {
@@ -156,36 +153,43 @@ table a:hover {
     color: #ffffff;
 }
 
-.input-container {
-    display: flex;
-    align-items: center;
-    background-color: #757575;
-    border-radius: 8px;
-    padding: 8px;
-    margin-bottom: 20px;
-}
-
 input[type="text"] {
     flex-grow: 1;
     padding: 8px;
     border-radius: 8px;
     border: none;
-    background-color: #757575;
-    color: #ffffff;
+    background-color: #f5e6ed; /* Изменено */
+    color: #000000; /* Изменено */
 }
 
-.search-button {
-    padding: 8px 16px;
+.input-container {
+    display: flex;
+    align-items: center;
+    background-color: #f5e6ed; /* Изменено */
     border-radius: 8px;
-    background-color: #ffffff;
-    color: #000000;
-    border: none;
-    text-decoration: none;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    margin-left: 10px;
+    padding: 8px;
+    margin-bottom: 20px;
 }
 
-.search-button:hover {
+.input-container input[type="text"] {
+    flex-grow: 1;
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    background-color: #f5e6ed; /* Изменено */
+    color: #000000; /* Изменено */
+}
+
+.input-container button {
+    background-color: #ffffff; /* Добавлено */
+    border: none; /* Добавлено */
+    padding: 8px 16px; /* Добавлено */
+    border-radius: 8px; /* Добавлено */
+    margin-left: 8px; /* Добавлено */
+    cursor: pointer; /* Добавлено */
+}
+
+.input-container button:hover {
     background: linear-gradient(135deg, #DC8CF7, #AE92FC);
     color: #ffffff;
 }
