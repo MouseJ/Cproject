@@ -153,19 +153,10 @@ table a:hover {
     color: #ffffff;
 }
 
-input[type="text"] {
-    flex-grow: 1;
-    padding: 8px;
-    border-radius: 8px;
-    border: none;
-    background-color: #f5e6ed; /* Изменено */
-    color: #000000; /* Изменено */
-}
-
 .input-container {
     display: flex;
     align-items: center;
-    background-color: #f5e6ed; /* Изменено */
+    background-color: #f5e6ed;
     border-radius: 8px;
     padding: 8px;
     margin-bottom: 20px;
@@ -176,17 +167,17 @@ input[type="text"] {
     padding: 8px;
     border-radius: 8px;
     border: none;
-    background-color: #f5e6ed; /* Изменено */
-    color: #000000; /* Изменено */
+    background-color: #f5e6ed;
+    color: #000000;
 }
 
 .input-container button {
-    background-color: #ffffff; /* Добавлено */
-    border: none; /* Добавлено */
-    padding: 8px 16px; /* Добавлено */
-    border-radius: 8px; /* Добавлено */
-    margin-left: 8px; /* Добавлено */
-    cursor: pointer; /* Добавлено */
+    background-color: #ffffff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    margin-left: 8px;
+    cursor: pointer;
 }
 
 .input-container button:hover {
