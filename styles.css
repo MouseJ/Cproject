@@ -34,11 +34,24 @@ nav ul li a {
     color: #ffffff;
     text-decoration: none;
     padding: 10px 20px;
+    position: relative;
 }
 
 nav ul li a.active {
     background: linear-gradient(135deg, #DC8CF7, #AE92FC);
     border-radius: 4px;
+    color: transparent;
+    background-clip: text;
+}
+
+nav ul li a.active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -2px;
+    height: 2px;
+    background: linear-gradient(135deg, #DC8CF7, #AE92FC);
 }
 
 .logout a {
