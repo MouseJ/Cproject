@@ -33,19 +33,25 @@ body {
 
 /* Хедер (Header) */
 .admin-header {
-    display: flex; /* Делаем flex-контейнером */
+    display: flex; /* Используем flexbox */
     align-items: center; /* Выравниваем элементы по вертикали */
-    background-color: #191919; /* Цвет фона для хедера */
+    background-color: #191919; /* Цвет фона хедера */
+}
 
+.admin-header-left {
+    flex-grow: 1; /* Это разделит ваш хедер на две части, чтобы правильно разместить элементы */
+}
+
+.admin-header-right {
+    margin-left: auto; /* Это сдвинет элементы вправо */
 }
 
 .admin-logo img {
-    width: 35px; /* Задаем ширину логотипа */
-    height: auto; /* Поддерживаем пропорции */
+    max-height: 50px; /* Максимальная высота логотипа */
 }
 
 .admin-tabs {
-    margin-left: 20px; /* Добавляем отступ между логотипом и вкладками */
+    margin-left: 20px; /* Отступ для вкладок */
 }
 
 .admin-tabs ul {
@@ -59,34 +65,36 @@ body {
 }
 
 .admin-tabs a {
-    color: #414141; /* Цвет текста вкладок */
+    color: #fff;
     text-decoration: none;
     padding: 10px 20px;
 }
 
 .admin-tabs a.active {
-    background: linear-gradient(45deg, #dc8cf7, #ae92fc); /* Градиентный фон для активной вкладки */
-    background-clip: text; /* Применяем градиент к тексту */
-    -webkit-background-clip: text; /* Для браузеров на основе Webkit */
-    color: transparent; /* Делаем текст прозрачным */
-    -webkit-text-fill-color: transparent; /* Для браузеров на основе Webkit */
-    text-decoration: underline; /* Подчеркиваем текст */
+    background: linear-gradient(45deg, #dc8cf7, #ae92fc);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    text-decoration: underline;
 }
 
 .admin-tabs a:hover {
-    color: #fff; /* Цвет текста вкладок при наведении */
+    color: #fff;
 }
 
 .admin-button {
-    color: #fff; /* Цвет текста кнопки Выйти */
+    color: #fff;
     padding: 8px 16px;
     text-decoration: none;
     border-radius: 5px;
 }
 
 .admin-button:hover {
-    background: #ae92fc; /* Градиентный фон кнопки при наведении */
+    background: #ae92fc;
 }
+
+
 
 /* Стили для вкладок */
 .admin-tabs {
