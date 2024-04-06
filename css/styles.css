@@ -61,10 +61,16 @@ nav ul li a.active::after {
 }
 
 .logout a {
-    color: #ffffff;
-    text-decoration: none;
-    padding: 10px;
-    border-radius: 4px;
-    background-color: #ffffff;
-    color: #000000;
+    padding: 10px 30px; /* Увеличиваем горизонтальный отступ для увеличения ширины */
+    border-radius: 20px; /* Увеличиваем радиус скругления углов */
+    background-color: transparent; /* Устанавливаем прозрачный фон */
+    border: 2px solid #ffffff; /* Добавляем белую обводку */
+    color: #ffffff; /* Устанавливаем белый цвет текста */
+    transition: all 0.3s ease; /* Добавляем плавный переход */
 }
+
+.logout a:hover {
+    background-color: #ffffff; /* Изменяем фон при наведении */
+    color: #000000; /* Изменяем цвет текста при наведении */
+}
+
