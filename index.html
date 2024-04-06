@@ -25,46 +25,48 @@
         </div>
     </header>
 
-    <main class="container">
-        <div class="sidebar">
-            <div class="filter">
-                <h3>Фильтры</h3>
-                <label for="role_user"><input type="checkbox" id="role_user"> Пользователь</label>
-                <label for="role_admin"><input type="checkbox" id="role_admin"> Администратор</label>
-                <label for="role_moderator"><input type="checkbox" id="role_moderator"> Модератор</label>
-                <label for="role_youtuber"><input type="checkbox" id="role_youtuber"> Ютубер</label>
+    <main>
+        <div class="container">
+            <div class="sidebar">
+                <div class="filter">
+                    <h3>Фильтры</h3>
+                    <label for="role_user"><input type="checkbox" id="role_user"> Пользователь</label>
+                    <label for="role_admin"><input type="checkbox" id="role_admin"> Администратор</label>
+                    <label for="role_moderator"><input type="checkbox" id="role_moderator"> Модератор</label>
+                    <label for="role_youtuber"><input type="checkbox" id="role_youtuber"> Ютубер</label>
 
-                <label for="subscription_subscribed"><input type="checkbox" id="subscription_subscribed"> Подписан</label>
-                <label for="subscription_unsubscribed"><input type="checkbox" id="subscription_unsubscribed"> Не подписан</label>
+                    <label for="subscription_subscribed"><input type="checkbox" id="subscription_subscribed"> Подписан</label>
+                    <label for="subscription_unsubscribed"><input type="checkbox" id="subscription_unsubscribed"> Не подписан</label>
 
-                <label for="sort_asc"><input type="checkbox" id="sort_asc"> По возрастанию UID</label>
-                <label for="sort_desc"><input type="checkbox" id="sort_desc"> По убыванию UID</label>
+                    <label for="sort_asc"><input type="checkbox" id="sort_asc"> По возрастанию UID</label>
+                    <label for="sort_desc"><input type="checkbox" id="sort_desc"> По убыванию UID</label>
+                </div>
             </div>
-        </div>
 
-        <div class="content">
-            <input type="text" id="search" placeholder="Поиск...">
+            <div class="content">
+                <input type="text" id="search" placeholder="Поиск...">
 
-            <table>
-                <thead>
-                    <tr>
-                        <th>UID</th>
-                        <th>Username</th>
-                        <th>Mail</th>
-                        <th>Profile</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <!-- Здесь будут данные из базы данных -->
-                    <tr>
-                        <td>1</td>
-                        <td>User1</td>
-                        <td>user1@example.com</td>
-                        <td><a href="#">Перейти</a></td>
-                    </tr>
-                    <!-- Здесь остальные строки таблицы -->
-                </tbody>
-            </table>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>UID</th>
+                            <th>Username</th>
+                            <th>Mail</th>
+                            <th>Profile</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Здесь будут данные из базы данных -->
+                        <tr>
+                            <td>1</td>
+                            <td>User1</td>
+                            <td>user1@example.com</td>
+                            <td><a href="#">Перейти</a></td>
+                        </tr>
+                        <!-- Здесь остальные строки таблицы -->
+                    </tbody>
+                </table>
+            </div>
         </div>
     </main>
 </body>
