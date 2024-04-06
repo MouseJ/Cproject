@@ -8,39 +8,64 @@ body {
 }
 
 .container {
-    width: 80%;
-    margin: 0 auto;
+    width: 80%; /* Ширина контейнера */
+    margin: 0 auto; /* Выравнивание по центру */
+    padding: 20px 0; /* Внутренние отступы сверху и снизу */
 }
 
-/* Стили для хедера */
+/* Хедер (Header) */
 .admin-header {
-    background-color: #000; /* Цвет фона хедера */
-    color: #fff; /* Цвет текста хедера */
-    padding: 10px 0;
-}
-
-.admin-header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: flex; /* Делаем flex-контейнером */
+    align-items: center; /* Выравниваем элементы по вертикали */
 }
 
 .admin-logo img {
-    width: 30px; /* Размер логотипа */
-    height: auto; /* Автоскейл по диагонали */
+    width: 150px; /* Задаем ширину логотипа */
+    height: auto; /* Поддерживаем пропорции */
+}
+
+.admin-tabs {
+    margin-left: 20px; /* Добавляем отступ между логотипом и вкладками */
+}
+
+.admin-tabs ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.admin-tabs li {
+    display: inline;
+}
+
+.admin-tabs a {
+    color: #414141; /* Цвет текста вкладок */
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.admin-tabs a.active {
+    background: linear-gradient(45deg, #dc8cf7, #ae92fc); /* Градиентный фон для активной вкладки */
+    background-clip: text; /* Применяем градиент к тексту */
+    -webkit-background-clip: text; /* Для браузеров на основе Webkit */
+    color: transparent; /* Делаем текст прозрачным */
+    -webkit-text-fill-color: transparent; /* Для браузеров на основе Webkit */
+    text-decoration: underline; /* Подчеркиваем текст */
+}
+
+.admin-tabs a:hover {
+    color: #fff; /* Цвет текста вкладок при наведении */
 }
 
 .admin-button {
-    background: #dc8cf7; /* градиентный фон */
-    background: linear-gradient(45deg, #dc8cf7, #ae92fc); /* градиентный фон */
-    color: #fff; /* Цвет текста кнопки */
+    color: #fff; /* Цвет текста кнопки Выйти */
     padding: 8px 16px;
     text-decoration: none;
     border-radius: 5px;
 }
 
 .admin-button:hover {
-    background: #ae92fc; /* градиентный фон при наведении */
+    background: #ae92fc; /* Градиентный фон кнопки при наведении */
 }
 
 /* Стили для вкладок */
