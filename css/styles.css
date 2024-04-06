@@ -114,9 +114,8 @@ nav ul li a.active::after {
     flex-grow: 1;
     padding: 20px;
     margin-top: 20px;
-    display: flex; /* Добавлено */
-    flex-direction: column; /* Добавлено */
-    align-items: flex-start; /* Добавлено */
+    width: 100%; /* Добавлено */
+    box-sizing: border-box;
 }
 
 table {
