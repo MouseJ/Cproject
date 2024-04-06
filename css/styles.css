@@ -1,14 +1,14 @@
 @font-face {
     font-family: 'Montserrat-Bold';
-    src: url('fonts/Montserrat-Bold.woff2') format('woff2'), /* Добавляем формат WOFF2 */
-         url('fonts/Montserrat-Bold.woff') format('woff'); /* Добавляем формат WOFF */
+    src: url('fonts/Montserrat-Bold.woff2') format('woff2'),
+         url('fonts/Montserrat-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
 }
 
 body {
     margin: 0;
-    font-family: 'Montserrat-Bold', sans-serif; /* Используем Montserrat-Bold */
+    font-family: 'Montserrat-Bold', sans-serif;
     background-color: #000000;
     color: #ffffff;
 }
@@ -17,7 +17,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 20px; /* Уменьшаем вертикальный и горизонтальный отступы */
+    padding: 10px 20px;
     background-color: #000000;
     border-bottom: 2px solid #ffffff;
 }
@@ -47,8 +47,8 @@ nav ul li a.active {
     background: linear-gradient(135deg, #DC8CF7, #AE92FC);
     border-radius: 4px;
     color: transparent;
-    background-clip: text; }
-    position: relative; /* Добавляем относительное позиционирование */
+    background-clip: text;
+    position: relative;
 }
 
 nav ul li a.active::after {
@@ -62,20 +62,17 @@ nav ul li a.active::after {
 }
 
 .logout a {
-    padding: 10px 20px; /* Фиксированный внутренний отступ */
+    padding: 10px 20px;
     border-radius: 8px;
     background-color: #ffffff;
     color: #000000;
     border: none;
     transition: background-color 0.3s ease, color 0.3s ease;
     text-decoration: none;
-    display: inline-block; /* Установка как блочный элемент для автоматического изменения ширины */
+    display: inline-block;
 }
 
 .logout a:hover {
     background: linear-gradient(135deg, #DC8CF7, #AE92FC);
     color: #ffffff;
 }
-
-
-
