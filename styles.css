@@ -43,11 +43,6 @@ body {
     background: #ae92fc; /* градиентный фон при наведении */
 }
 
-
-.admin-button:hover {
-    background-color: #cc5500; /* Цвет кнопки при наведении */
-}
-
 /* Стили для вкладок */
 .admin-tabs {
     background-color: #666; /* Цвет фона вкладок */
@@ -78,9 +73,28 @@ body {
     background-color: #444; /* Цвет вкладки при наведении */
 }
 
-/* Стили для основного содержимого */
-.main-content {
-    padding: 20px 0;
+/* Стили для основного содержимого (пользовательской таблицы) */
+.user-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.user-table th, .user-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+
+.user-table th {
+    background-color: #444; /* Цвет фона заголовков таблицы */
+    color: #fff; /* Цвет текста заголовков таблицы */
+}
+
+.user-table tr:nth-child(even) {
+    background-color: #f2f2f2; /* Цвет фона четных строк таблицы */
+}
+
+.user-table tr:hover {
+    background-color: #ddd; /* Цвет фона строки при наведении */
 }
 
 /* Стили для футтера */
@@ -108,28 +122,4 @@ body {
 
 .social-links a:hover {
     text-decoration: underline;
-}
-
-/* Стили для основного содержимого (пользовательской таблицы) */
-.user-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-.user-table th, .user-table td {
-    border: 1px solid #ccc;
-    padding: 8px;
-}
-
-.user-table th {
-    background-color: #444; /* Цвет фона заголовков таблицы */
-    color: #fff; /* Цвет текста заголовков таблицы */
-}
-
-.user-table tr:nth-child(even) {
-    background-color: #f2f2f2; /* Цвет фона четных строк таблицы */
-}
-
-.user-table tr:hover {
-    background-color: #ddd; /* Цвет фона строки при наведении */
 }
