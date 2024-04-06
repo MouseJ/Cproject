@@ -31,12 +31,18 @@ body {
 }
 
 .admin-button {
-    background-color: #ff6600; /* Цвет кнопки */
+    background: #dc8cf7; /* градиентный фон */
+    background: linear-gradient(45deg, #dc8cf7, #ae92fc); /* градиентный фон */
     color: #fff; /* Цвет текста кнопки */
     padding: 8px 16px;
     text-decoration: none;
     border-radius: 5px;
 }
+
+.admin-button:hover {
+    background: #ae92fc; /* градиентный фон при наведении */
+}
+
 
 .admin-button:hover {
     background-color: #cc5500; /* Цвет кнопки при наведении */
