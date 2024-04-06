@@ -14,7 +14,7 @@ body {
 
 /* Стили для хедера */
 .admin-header {
-    background-color: #333; /* Цвет фона хедера */
+    background-color: #000; /* Цвет фона хедера */
     color: #fff; /* Цвет текста хедера */
     padding: 10px 0;
 }
@@ -26,7 +26,7 @@ body {
 }
 
 .admin-logo img {
-    width: 50px; /* Размер логотипа */
+    width: 20px; /* Размер логотипа */
     height: auto; /* Автоскейл по диагонали */
 }
 
