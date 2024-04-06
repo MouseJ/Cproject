@@ -90,7 +90,7 @@ nav ul li a.active::after {
     background-color: #212121;
     border-radius: 16px;
     padding: 20px;
-    margin-top: 20px; /* Добавляем отступ над фильтрами */
+    margin-top: 20px;
 }
 
 .filter {
@@ -111,7 +111,7 @@ nav ul li a.active::after {
     padding: 20px;
     background-color: #212121;
     border-radius: 16px;
-    margin-top: 20px; /* Добавляем отступ от шапки сайта */
+    margin-top: 20px;
     margin-left: 20px;
 }
 
@@ -160,9 +160,12 @@ table a:hover {
 }
 
 input[type="text"] {
-    width: 100%;
+    width: calc(100% - 24px); /* Выравниваем ширину поискового поля */
     padding: 8px;
     margin-bottom: 20px;
     border-radius: 8px;
     border: none;
+    margin-right: 12px; /* Добавляем отступ справа */
+    background-color: #212121; /* Задний фон как у фильтров */
+    color: #ffffff; /* Цвет текста как у фильтров */
 }
