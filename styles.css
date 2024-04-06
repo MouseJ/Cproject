@@ -38,10 +38,7 @@ nav ul li a {
 }
 
 nav ul li a.active {
-    background: linear-gradient(135deg, #DC8CF7, #AE92FC);
-    border-radius: 4px;
-    color: transparent;
-    background-clip: text;
+    position: relative; /* Устанавливаем позицию относительно */
 }
 
 nav ul li a.active::after {
@@ -49,10 +46,12 @@ nav ul li a.active::after {
     position: absolute;
     left: 0;
     right: 0;
-    bottom: -2px;
+    bottom: -2px; /* Отступ от нижней границы текста */
     height: 2px;
     background: linear-gradient(135deg, #DC8CF7, #AE92FC);
+    width: max-content; /* Ширина подчеркивания будет равна ширине текста */
 }
+
 
 .logout a {
     color: #ffffff;
