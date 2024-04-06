@@ -12,7 +12,7 @@ body {
     background-color: #000000;
     color: #ffffff;
     display: flex;
-    flex-direction: column; /* Изменено */
+    flex-direction: column;
 }
 
 header {
@@ -82,6 +82,7 @@ nav ul li a.active::after {
 .container {
     display: flex;
     width: 100%;
+    margin-top: 20px; /* Добавлено */
 }
 
 .sidebar {
@@ -89,7 +90,7 @@ nav ul li a.active::after {
     background-color: #212121;
     border-radius: 16px;
     padding: 20px;
-    margin-right: 20px; /* Добавлено */
+    margin-right: 20px;
 }
 
 .filter {
@@ -149,7 +150,7 @@ table a:hover {
 }
 
 input[type="text"] {
-    width: calc(100% - 20px); /* Изменено */
+    width: calc(100% - 20px);
     padding: 8px;
     margin-bottom: 20px;
     border-radius: 8px;
@@ -166,10 +167,10 @@ input[type="text"] {
     border: none;
     text-decoration: none;
     transition: background-color 0.3s ease, color 0.3s ease;
-    margin-left: 10px;
 }
 
 .search-button:hover {
     background: linear-gradient(135deg, #DC8CF7, #AE92FC);
     color: #ffffff;
+    margin-left: 10px; /* Добавлено */
 }
