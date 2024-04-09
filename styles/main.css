@@ -3,14 +3,13 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #000000; /* Изменяем фоновый цвет на черный */
-    color: #FFFFFF; /* Изменяем цвет текста на белый */
 }
 
 /* Шапка сайта */
 header {
-    background-color: #191919; /* Изменяем цвет шапки на более темный */
-    padding: 20px;
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 10px 20px; /* Уменьшаем отступы */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -18,7 +17,7 @@ header {
 
 /* Логотип */
 .logo img {
-    max-width: 80px; /* Уменьшаем размер логотипа */
+    max-width: 30px; /* Уменьшаем размер логотипа до 30 пикселей */
 }
 
 /* Навигационное меню */
@@ -39,5 +38,65 @@ nav ul li:last-child {
 
 nav ul li a {
     text-decoration: none;
-    color: #FFFFFF; /* Изменяем цвет ссылок на белый */
-    font-weight: bold
+    color: #FFFFFF; /* Цвет текста навигационного меню */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #DC8CF7; /* Изменяем цвет текста при наведении */
+}
+
+/* Кнопка входа/регистрации */
+.user-actions .btn {
+    background-color: #DC8CF7;
+    color: #000000; /* Изменяем цвет текста кнопки */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.user-actions .btn:hover {
+    opacity: 0.8;
+}
+
+/* Кнопка смены языка */
+.lang-selector {
+    position: relative;
+    margin-left: 20px;
+}
+
+.lang-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.lang-dropdown {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    display: none;
+}
+
+.lang-dropdown a {
+    display: block;
+    padding: 10px 20px;
+    color: #414141;
+    text-decoration: none;
+}
+
+.lang-dropdown a:hover {
+    background-color: #f2f2f2;
+}
+
+/* Отображение выпадающего меню языка */
+.lang-selector:hover .lang-dropdown {
+    display: block;
+}
