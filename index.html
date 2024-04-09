@@ -1,38 +1,50 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Cproject - Админ панель</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Site Title</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- Подключаем Material Icons для иконок -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
+    <!-- Шапка сайта -->
     <header>
-        <div class="container">
-            <div class="logo">
-                <img src="logo.png" alt="Логотип Cproject">
-            </div>
-            <div class="user-cabinet">
-                <a href="#">Личный кабинет</a>
-            </div>
-        </div>
+        <!-- Навигационное меню -->
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+                <!-- Кнопка "Личный кабинет" или "Войти" -->
+                <li><a href="#" class="btn">Личный кабинет</a></li>
+            </ul>
+        </nav>
     </header>
 
+    <!-- Основной контент -->
     <main>
-        <div class="container">
-            <div class="sidebar">
-                <ul>
-                    <li><a href="#">Пользователи</a></li>
-                    <li><a href="#">Статистика</a></li>
-                    <li><a href="#">Промокоды</a></li>
-                    <li><a href="#">Доходы</a></li>
-                    <li><a href="#">Обновления</a></li>
-                </ul>
-            </div>
-            <div class="content">
-                <h1>Главная страница</h1>
-                <p>Здесь будут отображаться основные сведения о проекте Cproject.</p>
-            </div>
-        </div>
+        <!-- Секция с описанием продукта и преимуществами -->
+        <section class="hero">
+            <h1>Your Product Name</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla varius lorem non quam tincidunt, a convallis purus varius. </p>
+            <a href="#" class="btn">Узнать больше</a>
+        </section>
+
+        <!-- Секция с партнерами или рекомендациями -->
+        <section class="partners">
+            <h2>Наши партнеры</h2>
+            <!-- Здесь можно добавить блоки с партнерскими логотипами или рекомендациями -->
+        </section>
     </main>
+
+    <!-- Подвал сайта -->
+    <footer>
+        <!-- Здесь можно добавить информацию о компании, контактные данные и ссылки на социальные сети -->
+    </footer>
+
+    <script src="scripts/main.js"></script>
 </body>
 </html>
