@@ -50,23 +50,11 @@ nav ul li a:hover {
     color: #DC8CF7; /* Изменяем цвет текста при наведении */
 }
 
-/* Кнопка входа/регистрации */
-.user-actions .btn {
-    background-color: #DC8CF7;
-    color: #000000;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-}
-
-.user-actions .btn:hover {
-    opacity: 0.8;
-}
-
 /* Кнопка смены языка */
 .lang-selector {
     position: relative;
-    margin-left: 20px;
+    margin-left: auto;
+    margin-right: 20px;
 }
 
 .lang-btn {
@@ -102,4 +90,17 @@ nav ul li a:hover {
 /* Отображение выпадающего меню языка */
 .lang-selector:hover .lang-dropdown {
     display: block;
+}
+
+/* Кнопка входа/регистрации */
+.user-actions .btn {
+    background-color: #DC8CF7;
+    color: #000000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.user-actions .btn:hover {
+    opacity: 0.8;
 }
