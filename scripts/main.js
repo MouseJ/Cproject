@@ -1,17 +1,36 @@
-// Обработчик события клика на кнопки переключения языка
-document.querySelectorAll('.lang').forEach(item => {
-    item.addEventListener('click', event => {
-        event.preventDefault();
-        const lang = item.getAttribute('data-lang');
-        changeLanguage(lang);
-    });
-});
+// Получаем все ссылки меню
+const menuLinks = document.querySelectorAll('nav ul li a');
 
-// Функция изменения языка контента
-function changeLanguage(lang) {
-    // Здесь можно добавить логику для изменения текста на странице в соответствии с выбранным языком
-    // Например, использовать объект с переводами для каждого языка
-    // Или загружать контент с сервера в соответствии с выбранным языком
-    console.log(`Выбран язык: ${lang}`);
+// Функция для подсветки текущего пункта меню
+function highlightMenuItem() {
+    // Получаем текущее положение на странице
+    const currentPosition = window.scrollY;
+
+    // Перебираем все ссылки меню
+    menuLinks.forEach(link => {
+        const sectionId = link.getAttribute('href').substring(1);
+        const section = document.getElementById(sectionId);
+        if (section.offsetTop <= currentPosition && section.offsetTop + section.offsetHeight > currentPosition) {
+            // Если текущая секция на экране, добавляем класс "active" к соответствующей ссылке
+            link.classList.add('active');
+        } else {
+            // В противном случае, удаляем класс "active"
+            link.classList.remove('active');
+        }
+    });
 }
 
+// Вызываем функцию для подсветки текущего пункта меню при загрузке страницы и прокрутке
+document.addEventListener('DOMContentLoaded', highlightMenuItem);
+window.addEventListener('scroll', highlightMenuItem);
+
+// Добавляем обработчики событий для смены цвета при наведении мыши
+menuLinks.forEach(link => {
+    link.addEventListener('mouseenter', () => {
+        link.style.color = '#DC8CF7'; // Изменяем цвет при наведении мыши
+    });
+
+    link.addEventListener('mouseleave', () => {
+        link.style.color = '#ffffff'; // Возвращаем изначальный цвет после ухода мыши
+    });
+});
