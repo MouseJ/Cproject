@@ -1,106 +1,119 @@
 /* Общие стили */
 body {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 600;
-    color: #ffffff; /* Цвет текста по умолчанию */
-    background-color: #000000; /* Цвет фона по умолчанию */
-    margin: 0;
-    padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: #ffffff; /* Цвет текста по умолчанию */
+  background-color: #000000; /* Цвет фона по умолчанию */
+  margin: 0;
+  padding: 0;
 }
 
 /* Шапка сайта */
 header {
-    background-color: #000000;
-    color: #ffffff;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 10px 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* Логотип */
+.logo {
+  margin-right: 20px;
+}
+
 .logo img {
-    max-width: 25px; /* Уменьшаем размер логотипа до 30 пикселей */
+  max-width: 30px; /* Уменьшаем размер логотипа до 30 пикселей */
 }
 
 /* Навигационное меню */
+nav {
+  margin: 0 auto;
+}
+
 nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
 }
 
 nav ul li {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 
 nav ul li:last-child {
-    margin-right: 0;
+  margin-right: 0;
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: #ffffff;
-    font-weight: bold;
-    transition: color 0.3s ease;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #DC8CF7; /* Изменяем цвет текста при наведении */
+  color: #DC8CF7; /* Изменяем цвет текста при наведении */
 }
 
 /* Кнопка смены языка */
-.lang-selector {
-    position: relative;
-    margin-left: auto;
-    margin-right: 20px;
+.user-actions {
+  display: flex;
+  align-items: center;
 }
 
 .lang-btn {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    padding: 5px;
-    font-size: 16px;
-    color: #ffffff;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  font-size: 16px;
+  color: #ffffff;
+  margin-right: 10px;
 }
 
 .lang-dropdown {
-    position: absolute;
-    top: 30px;
-    left: 0;
-    background-color: #ffffff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    display: none;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  display: none;
 }
 
 .lang-dropdown a {
-    display: block;
-    padding: 10px 20px;
-    color: #414141;
-    text-decoration: none;
+  display: block;
+  padding: 10px 20px;
+  color: #414141;
+  text-decoration: none;
 }
 
 .lang-dropdown a:hover {
-    background-color: #f2f2f2;
+  background-color: #f2f2f2;
 }
 
 /* Отображение выпадающего меню языка */
 .lang-selector:hover .lang-dropdown {
-    display: block;
+  display: block;
 }
 
 /* Кнопка входа/регистрации */
 .user-actions .btn {
-    background-color: #DC8CF7;
-    color: #000000;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
+  background-color: #DC8CF7;
+  color: #000000;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
 }
 
 .user-actions .btn:hover {
-    opacity: 0.8;
+  opacity: 0.8;
 }
