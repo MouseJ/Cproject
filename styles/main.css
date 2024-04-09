@@ -1,6 +1,9 @@
 /* Общие стили */
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    color: #ffffff; /* Цвет текста по умолчанию */
+    background-color: #000000; /* Цвет фона по умолчанию */
     margin: 0;
     padding: 0;
 }
@@ -8,8 +11,8 @@ body {
 /* Шапка сайта */
 header {
     background-color: #000000;
-    color: #FFFFFF;
-    padding: 10px 20px; /* Уменьшаем отступы */
+    color: #ffffff;
+    padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -38,7 +41,7 @@ nav ul li:last-child {
 
 nav ul li a {
     text-decoration: none;
-    color: #FFFFFF; /* Цвет текста навигационного меню */
+    color: #ffffff;
     font-weight: bold;
     transition: color 0.3s ease;
 }
@@ -50,7 +53,7 @@ nav ul li a:hover {
 /* Кнопка входа/регистрации */
 .user-actions .btn {
     background-color: #DC8CF7;
-    color: #000000; /* Изменяем цвет текста кнопки */
+    color: #000000;
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
@@ -72,14 +75,14 @@ nav ul li a:hover {
     cursor: pointer;
     padding: 5px;
     font-size: 16px;
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .lang-dropdown {
     position: absolute;
     top: 30px;
     left: 0;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     display: none;
