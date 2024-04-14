@@ -10,7 +10,7 @@ def main(message):
     if (user_id == message.chat.id): #проверяем, что пишет именно владелец
         command = message.text  #текст сообщения
         try:
-            output = check_output(command, shell=True, stderr=telebot.apihelper.proxy_urllib3.response_log)
+            output = check_output(command, shell=True)
             bot.send_message(message.chat.id, output.decode('utf-8')) # отправляем результат выполнения команды
         except CalledProcessError as e:
             bot.send_message(message.chat.id, f"Error: {e.returncode}") # отправляем код ошибки
