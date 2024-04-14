@@ -4,12 +4,12 @@ from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 from telegram import Bot, ParseMode
 
 # Конфигурация Discord
-DISCORD_TOKEN = 'h'
-DISCORD_CHANNEL_ID = YOUR_DISCORD_CHANNEL_ID
+DISCORD_TOKEN = 'MTIyOTA1OTIzNTMwMDc3NDAwNQ.GNrli4.PcaCQfK221pUds5ibdc-gwt5WHo2FQH9SYmecA'
+DISCORD_CHANNEL_ID = 1220135174780747826
 
 # Конфигурация Telegram
-TELEGRAM_TOKEN = 'YOUR_TELEGRAM_TOKEN'
-TELEGRAM_CHAT_ID = 'YOUR_TELEGRAM_CHAT_ID'
+TELEGRAM_TOKEN = '6402768754:AAEEDyxStj3ozeNhE16-vhtphEefi9pDsTg'
+TELEGRAM_CHAT_ID = '4175813988'
 
 # Инициализация клиентов Discord и Telegram
 discord_bot = commands.Bot(command_prefix='!')
