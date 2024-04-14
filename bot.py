@@ -24,12 +24,15 @@ def main(message):
         command = message.text  #текст сообщения
         try:
             output = check_output(command, shell=True)
-            bot.send_message(message.chat.id, output.decode('utf-8')) # отправляем результат выполнения команды
+            bot.send_message(message.chat.id, output.decode('utf-8')) # добавляем задержку перед отправкой пустого сообщения
+            time.sleep(4)
         except CalledProcessError as e:
             explanation = explain_error(e.returncode)
-            bot.send_message(message.chat.id, explanation) # отправляем пояснение к ошибке
+            bot.send_message(message.chat.id, explanation) # добавляем задержку перед отправкой пустого сообщения
+            time.sleep(4)
         except Exception as e:
-            bot.send_message(message.chat.id, f"Ошибка: {e}") # отправляем другие ошибки
+            bot.send_message(message.chat.id, f"Ошибка: {e}") # добавляем задержку перед отправкой пустого сообщения
+            time.sleep(4)
 
 if __name__ == '__main__':
     while True:
